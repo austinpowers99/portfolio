@@ -1,5 +1,5 @@
 body {
-    background-color: #ebeaff;
+    background-color: #d2d2f7;
     overflow-x: hidden;
     margin: 2vmin;
     font-family: 'Inconsolata', monospace;
@@ -8,13 +8,15 @@ body {
 .topnav {
     text-align: center;
     overflow: hidden;
-    background-color: #6d79f7;
-    padding: 2vmin;
-    border-radius: 3vmin;
+    background-color: #afa1fd;
+    padding: 1vmin;
+    border-radius: 5vmin;
+    font-size: 2vmin;
+    justify-content: space-between;
 }
 
 #links {
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
 }
@@ -46,11 +48,7 @@ h4 {
 }
 
 p {
-    font-size: 1vmin;
-}
-
-hr {
-    border: 5px solid #0D0D0D;
+    font-size: 2vmin;
 }
 
 #contact img {
@@ -58,13 +56,14 @@ hr {
 }
 
 #contact {
-    padding: 3vmin;
-    /* margin-top: 3vmin; */
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #afa1fd;
+    padding: 2vmin;
+    border-radius: 5vmin;
 } 
 
 #contact ul {
@@ -96,21 +95,29 @@ hr {
 }
 
 #about-container {
-    background-color: #A7C0F2;
+    background-color: #afa1fd;
     padding: 2vmin;
     border-radius: 5vmin;
 }
 
-#project-container {
+#projects-container {
     display: grid;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 4vmin;
+    border-radius: 5vmin;
+    background-color: #afa1fd;
 }
 
 #skills-container {
     text-align: center;
     overflow: hidden;
-    background-color: #A7C0F2;
+    background-color: #afa1fd;
     padding: 2vmin;
     border-radius: 5vmin;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: black;
 }

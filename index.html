@@ -8,32 +8,30 @@
     <link rel='stylesheet' type='text/css' href='styles.css' />
     <script src='app.js' defer></script>
     <script async src='https://www.googletagmanager.com/gtag/js?id=G-8710G9Z538'></script>
-
-    <!-- <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-8710G9Z538');
-    </script> -->
 </head>
 
 <body>
     <header>
         <nav class='topnav' id='navbar'>
-            <div id='links'>
-                <a href='#about'>Samantha Fuentes//Software Engineer</a>
-                <a href='#about'>About</a>
-                <a href='#projects'>Projects</a>
-                <a href='#contact'>Contact</a>
+            <div>
+                <a href='#about' class="no-underline"><h4>Samantha Fuentes // Software Engineer</h4></a>
+                <a href='#about' class="no-underline">About</a>
+                <a href='#projects' class="no-underline">Projects</a>
+                <a href='#contact' class="no-underline">Contact</a>
             </div>
         </nav>
     </header>
     <br>
     <div id='about'>
         <div id='skills-container'>
-            <h2>About Me</h2>
-            <h4>I'm a software engineer who combines a science background with superb customer service skills. 
-                A team-player who is well-prepared and eager to tackle any challenge that comes my way!</h4>
+            <h2 id='name'>Hi, I'm Sam!</h2>
+            <p>I'm a software developer based in San Fransisco, California with a unique blend of technical expertise and superb customer service skills. 
+                As a collaborative team player, I'm always well-prepared and eager to take on any challenge that comes my way!
+                <br>
+                <br>
+                My journey into computer software engineering at General Assembly began after a background in the hospitality 
+                industry and a deep passion for green technology. I decided to embrace the unknown and push forward, 
+                not only for myself but for my family who at some point gave up everything so that I could be here today.</p>
         </div>
         <br>
         <div id='about-container'>
@@ -51,20 +49,55 @@
         </div>
     </div>
     <br>
-    <div id='projects'>
+    <div id='projects-container'>
         <h2 align='center'>Projects</h2>
-        <!-- <div id='project-container'> -->
         <div id='project1'>
-            <h3>Mandrake - August 2023</h3>
-            <h4>--description--</h4>
+            <h3>Mandrake // August 2023</h3>
+            <p>
+                Full stack and single page online app for gardening with care guides, 
+                and growing tips for each plant, making it easy to care for your green companions!</p>
+            <a
+                class="project-link"
+                href="https://mandrake-app-d113a6b8d70e.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Live Link
+            </a>
+            <br />
+            <span class="technology">React | Express.js | Node.js | Mongoose | MongoDB | GitHub | JSON | API</span>
+            <br />
         </div>
         <div id='project2'>
-            <h3>Pawfolio - August 2023</h3>
-            <h4>--description--</h4>
+            <h3>Pawfolio // August 2023</h3>
+            <p>A CRM software for doggy daycare/boarding facilities that provides daily updates 
+                to owners via report cards. Created as a team of three.</p>
+            <a
+                class="project-link"
+                href="https://pawfolio-lovelace-7c9477f097c5.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Live Link
+            </a>
+            <br />
+            <span class="technology">Django | Python | PostgreSQL | AWS | GitHub | Heroku</span>
+            <br />
         </div>
         <div id='project3'>
-            <h3>Gourmet Memoirs - July 2023</h3>
-            <h4>--description--</h4>
+            <h3>Gourmet Memoirs // July 2023</h3>
+            <p>Full-stack CRUD application for foodies to discover new dishes and preserve treasured recipes.</p>
+            <a
+                class="project-link"
+                href="https://github.com/austinpowers99/Gourmet-Memoirs"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Github
+            </a>
+            <br />
+            <span class="technology">CSS | HTML | Javascript | Express.js | MongoDB | Mongoose | JSON | Heroku</span>
+            <br />
         </div>
     </div>
     <br>
