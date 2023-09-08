@@ -1,9 +1,9 @@
 body {
     background-color: #f8bc53;
     color: #f13636;
-    font-family: 'Barlow Condensed', sans-serif;
     overflow-x: hidden;
     margin: 2vmin;
+    font-family: 'Inconsolata', monospace;
 }
 
 nav {
@@ -14,7 +14,7 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -94,4 +94,25 @@ hr {
 #contact li {
     margin: 2vmin;
     padding: 0;
+}
+
+#about {
+    padding: 5vmin;
+}
+
+#about ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#about li img {
+    width: 6vmin;
+}
+
+#about-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
