@@ -8,9 +8,9 @@ body {
 .topnav {
     text-align: center;
     overflow: hidden;
-    background-color: #afa1fd;
+    /* background-color: #afa1fd;
     padding: 1vmin;
-    border-radius: 5vmin;
+    border-radius: 5vmin; */
     font-size: 2vmin;
     justify-content: space-between;
 }
@@ -62,7 +62,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #afa1fd;
-    padding: 2vmin;
+    padding: 1vmin;
     border-radius: 5vmin;
 } 
 
@@ -94,7 +94,7 @@ p {
     width: 6vmin;
 }
 
-#about-container {
+#skills-container{
     background-color: #afa1fd;
     padding: 2vmin;
     border-radius: 5vmin;
@@ -109,15 +109,28 @@ p {
     background-color: #afa1fd;
 }
 
-#skills-container {
+#about-container {
     text-align: center;
     overflow: hidden;
-    background-color: #afa1fd;
     padding: 2vmin;
-    border-radius: 5vmin;
+    width: 55%;
+    margin-top: 3vmin;
 }
 
 .no-underline {
     text-decoration: none;
     color: black;
+}
+
+#profile-img {
+    float: right;
+    display: flex;
+    padding: 2vmin;
+    border-radius: 50%;
+    height: 31vmin;
+    margin-top: 5vmin;
+}
+
+#name {
+    text-align: center;
 }
