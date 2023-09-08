@@ -1,54 +1,38 @@
 body {
-    background-color: #f8bc53;
-    color: #f13636;
+    background-color: #ebeaff;
     overflow-x: hidden;
     margin: 2vmin;
     font-family: 'Inconsolata', monospace;
 }
 
-nav {
-    margin: 0;
-    width: 100%;
+.topnav {
+    text-align: center;
+    overflow: hidden;
+    background-color: #6d79f7;
+    padding: 2vmin;
+    border-radius: 3vmin;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#links {
+    justify-content: space-around;
     align-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-nav li a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 3vmin;
-}
-
-header {
-    padding: 2vmin;
-}
-
-footer {
+footer p {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: medium;
     margin: 3vmin;
-    color: #401910;
-}
-
-footer a {
-    color: #ffffff;
+    color: #000000;
 }
 
 h2 {
     font-size: 4vmin;
     color: #000000;
+
 }
 
 h3 {
@@ -58,15 +42,15 @@ h3 {
 
 h4 {
     font-size: 2.5vmin;
-    color: #754102;
+    color: #000000;
 }
 
 p {
-    font-size: 3vmin;
+    font-size: 1vmin;
 }
 
 hr {
-    border: 1px solid #0D0D0D;
+    border: 5px solid #0D0D0D;
 }
 
 #contact img {
@@ -75,7 +59,7 @@ hr {
 
 #contact {
     padding: 3vmin;
-    margin-top: 3vmin;
+    /* margin-top: 3vmin; */
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -98,15 +82,13 @@ hr {
     padding: 0;
 }
 
-#about {
-    padding: 5vmin;
-}
-
 #about ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
+    padding: 2vmin;
+    border-radius: 5vmin;
 }
 
 #about li img {
@@ -114,7 +96,21 @@ hr {
 }
 
 #about-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    background-color: #A7C0F2;
+    padding: 2vmin;
+    border-radius: 5vmin;
+}
+
+#project-container {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#skills-container {
+    text-align: center;
+    overflow: hidden;
+    background-color: #A7C0F2;
+    padding: 2vmin;
+    border-radius: 5vmin;
 }
