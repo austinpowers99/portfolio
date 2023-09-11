@@ -17,10 +17,10 @@ body {
 
 .no-underline {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 1vmin;
-    border-radius: 2vmin;
-    background-color: #faf9ff;
+    border-radius: 1vmin;
+    background-color: #faf3ff;
 }
 
 footer p {
@@ -28,7 +28,7 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: medium;
+    font-size: auto;
     margin: 3vmin;
     color: #000000;
 }
@@ -122,7 +122,7 @@ p {
     height: 31vmin;
     overflow: hidden;
     padding: 2vmin;
-    max-width: 100%;
+    max-width: auto;
     margin-top: 4vmin;
 }
 
