@@ -13,22 +13,25 @@
 <body>
     <header>
         <nav class='topnav' id='navbar'>
-            <div>
-                <a href='#about' class="no-underline">Samantha Fuentes // Software Engineer</a>
-                <a href='#about' class="no-underline">About</a>
-                <a href='#projects' class="no-underline">Projects</a>
-                <a href='#contact' class="no-underline">Contact</a>
+            <div class='nav-left'>
+                <a href='#about' class='no-underline'><strong>Samantha Fuentes // Software Engineer</strong></a>
+            </div>
+            <br>
+            <div class='nav-right'></div>
+                <a href='#about' class='no-underline'>About Me</a>
+                <a href='#projects' class='no-underline'>Projects</a>
+                <a href='#contact' class='no-underline'>Contact</a>
             </div>
         </nav>
     </header>
     <br>
     <div id='about'>
         <div>
-            <h2 id='name'>Hi, I'm Sam!</h2>
-            <img id="profile-img" src="./images/sam.png" alt="image of Samantha Fuentes">
+            <h2 id='name'>Hi, I'm Sam</h2>
+            <img id='profile-img' src='./images/sam.png' alt='image of Samantha Fuentes'>
         </div>
         <div id='about-container' >
-            <p>I'm a software developer based in San Fransisco, California with a unique blend of technical expertise and superb customer service skills. 
+            <h5>I'm a software developer based in San Fransisco, California with a unique blend of technical expertise and superb customer service skills. 
                 <br>
                 <br>
                 As a collaborative team player, I'm always well-prepared and eager to take on any challenge that comes my way!
@@ -39,7 +42,7 @@
                 <br>
                 <br>
                 I decided to embrace the unknown and push forward, 
-                not only for myself but for my family who at some point gave up everything so that I could be here today.</p>
+                not only for myself but for my family who at some point gave up everything so that I could be here today.</h5>
         </div>
         <br>
         <div id='skills-container'>
@@ -57,55 +60,48 @@
         </div>
     </div>
     <br>
-    <div id='projects-container'>
+    <div id='projects'>
         <h2 align='center'>Projects</h2>
-        <div id='project1'>
-            <h3>Mandrake // August 2023</h3>
-            <p>
-                Full stack and single page online app for gardening with care guides, 
-                and growing tips for each plant, making it easy to care for your green companions!</p>
-            <a
-                class="project-link"
-                href="https://mandrake-app-d113a6b8d70e.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-            >
-                Live Link
-            </a>
-            <br />
-            <span class="technology">React | Express.js | Node.js | Mongoose | MongoDB | GitHub | JSON | API</span>
-            <br />
-        </div>
-        <div id='project2'>
-            <h3>Pawfolio // August 2023</h3>
-            <p>A CRM software for doggy daycare/boarding facilities that provides daily updates 
-                to owners via report cards. Created as a team of three.</p>
-            <a
-                class="project-link"
-                href="https://pawfolio-lovelace-7c9477f097c5.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-            >
-                Live Link
-            </a>
-            <br />
-            <span class="technology">Django | Python | PostgreSQL | AWS | GitHub | Heroku</span>
-            <br />
-        </div>
-        <div id='project3'>
-            <h3>Gourmet Memoirs // July 2023</h3>
-            <p>Full-stack CRUD application for foodies to discover new dishes and preserve treasured recipes.</p>
-            <a
-                class="project-link"
-                href="https://github.com/austinpowers99/Gourmet-Memoirs"
-                target="_blank"
-                rel="noreferrer"
-            >
-                Github
-            </a>
-            <br />
-            <span class="technology">CSS | HTML | Javascript | Express.js | MongoDB | Mongoose | JSON | Heroku</span>
-            <br />
+        <div id='project-container'>
+            <div id='project1'>
+                <h3>Mandrake // August 2023</h3>
+                <p>Full stack and single page online app for gardening with care guides, and growing tips for each plant, making it easy to care for your green companions!</p>
+                <br>
+                <img src='images/mandrake.png'>
+                <div id='button-box'>
+                    <a class='image-link' href='https://mandrake-app-d113a6b8d70e.herokuapp.com/' target='_blank'>Live Link</a>
+                    <a class='image-link' href='https://github.com/austinpowers99/Mandrake' target='_blank'>GitHub</a>
+                </div>
+                <br>
+                <span class='technology'>React | Express.js | Node.js | Mongoose | MongoDB | GitHub | JSON | API</span>
+                <br>
+            </div>
+            <div id='project2'>
+                <h3>Pawfolio // August 2023</h3>
+                <p>A CRM software for doggy daycare/boarding facilities that provides daily updates to owners via report cards. Created collaboratively with 2 other programmers.</p>
+                <br>
+                <img src='images/pawfolio.png'>
+                <div id='button-box'>
+                    <a class='image-link' href='https://pawfolio-lovelace-7c9477f097c5.herokuapp.com/' target='_blank'>Live Link</a>
+                    <a class='image-link' href='https://github.com/austinpowers99/pawfolio' target='_blank'>GitHub</a>
+                </div>
+                <br>
+                <span class='technology'>Django | Python | PostgreSQL | AWS | GitHub | Heroku</span>
+                <br>
+            </div>
+            <div id='project3'>
+                <h3>Gourmet Memoirs // July 2023</h3>
+                <p>Full-stack CRUD application for foodies to discover new dishes and preserve treasured recipes.</p>
+                <br>
+                <img src='images/gourmet.png'>
+                <div id='button-box'>
+                    <!-- <a class='image-link' href='' target='_blank'>Live Link</a> -->
+                    <a class='image-link' href='https://github.com/austinpowers99/Gourmet-Memoirs' target='_blank'>GitHub</a>
+                </div>
+                <br>
+                <span class='technology'>CSS | HTML | Javascript | Express.js | MongoDB | Mongoose | JSON | Heroku</span>
+                <br>
+            </div>
         </div>
     </div>
     <br>
@@ -121,7 +117,7 @@
 
     <!-- ======= Footer ======= -->
     <footer>
-        <p class="copyright">&copy; Copyright 2023 <strong>. Samantha Fuentes</strong>. All Rights Reserved</p>
+        <p class='copyright'>&copy; Copyright 2023 <strong>. Samantha Fuentes</strong>. All Rights Reserved</p>
     </footer> 
 </body>
 </html>
