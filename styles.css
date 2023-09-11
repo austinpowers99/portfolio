@@ -20,7 +20,7 @@ body {
     color: black;
     padding: 1vmin;
     border-radius: 2vmin;
-    background-color: #ebebfe;
+    background-color: #faf9ff;
 }
 
 footer p {
@@ -123,7 +123,7 @@ p {
     overflow: hidden;
     padding: 2vmin;
     max-width: 100%;
-    margin-top: 4vmin; 
+    margin-top: 4vmin;
 }
 
 #name {
@@ -189,15 +189,10 @@ p {
     }
 }
 
-.about.vertical-scaling {
-    display: inline-block;
-    transform: scale(1, 1.5);
-    /* Safari and Chrome */
-    -webkit-transform: scale(1, 1.5);
-    /* Firefox */
-    -moz-transform: scale(1, 1.5);
-    /* IE 9+ */
-    -ms-transform: scale(1, 1.5);
-    /* Opera */
-    -o-transform: scale(1, 1.5);
+.image-link {
+    color:#ffffff;
+    text-decoration: none;
+    background-color:#1d69f7;
+    padding: 1.5vmin;
+    border-radius: 5px;
 }
