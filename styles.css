@@ -15,20 +15,12 @@ body {
     justify-content: space-between;
 }
 
-.nav-left {
-    display: flex;
-    justify-content: center;
-    padding: 1vmin;
-    border-radius: 5vmin;
-    background-color: #ebebed;
-}
-
 .no-underline {
     text-decoration: none;
     color: black;
     padding: 1vmin;
     border-radius: 2vmin;
-    background-color: #ebebed;
+    background-color: #ebebfe;
 }
 
 footer p {
