@@ -24,26 +24,3 @@ function toggleEmail() {
         // const textToType = ''; // Change this to your desired text
         // const typingSpeed = 100; // Adjust typing speed here (milliseconds)
         // typeWriter(textToType, typingSpeed);
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const openModalButtons = document.querySelectorAll('.open-modal');
-            const modal = document.getElementById('modal');
-            const closeModal = document.querySelector('.close-modal');
-        
-            openModalButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    modal.style.display = 'block';
-                });
-            });
-        
-            closeModal.addEventListener('click', function () {
-                modal.style.display = 'none';
-            });
-        
-            window.addEventListener('click', function (event) {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                }
-            });
-        });
-        
