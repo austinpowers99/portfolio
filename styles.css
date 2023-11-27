@@ -119,7 +119,6 @@ p {
     float: right;
     display: flex;
     border-radius: 50%;
-    box-shadow: 1vmin 1vmin 1vmin #8df9db;
     height: 31vmin;
     overflow: hidden;
     padding: 2vmin;
