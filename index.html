@@ -24,7 +24,7 @@
     <br>
     <div id='about'>
         <div>
-            <h2 id='name'>Hi, I'm Sam!</h2>
+            <h2 id='name'>Hi, I'm Sam, <br>and I'm a <span id="typewriter-text"></span></h2>
             <img id='profile-img' src='./images/sam.png' alt='image of Samantha Fuentes'>
         </div>
         <div id='about-container' >
@@ -39,7 +39,7 @@
             My journey in computer software engineering began at General Assembly after honing a strong work ethic and a team-player mindset during my three-year stint in the food industry.
             <br>
             <br>
-            As a developer, I`m always well-prepared, eager to learn, and ready to solve problems! </h5>
+            As a developer, I`m always well-prepared and eager to learn! </h5>
             <br>
         </div>
         <div id='skills-container'>
@@ -139,3 +139,45 @@
     </footer> 
 </body>
 </html>
+
+<script>
+    const typewriterTextElement = document.getElementById("typewriter-text");
+
+    const textsToAnimate = [
+        "software developer",
+        "coin collector",
+        "recreational skater",
+        "plantsman",
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function animateText() {
+        const currentText = textsToAnimate[textIndex];
+        const currentChar = currentText.charAt(charIndex);
+
+    if (!isDeleting) {
+        typewriterTextElement.textContent += currentChar;
+        charIndex++;
+    } else {
+        typewriterTextElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+    }
+
+    if (charIndex === currentText.length + 1) {
+        isDeleting = true;
+    }
+
+    if (charIndex === 0 && isDeleting) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % textsToAnimate.length;
+    }
+
+        const speed = isDeleting ? 90 : 120;
+        setTimeout(animateText, speed);
+    }
+
+    animateText();
+</script>
